@@ -14,12 +14,32 @@
       href="https://s.pageclip.co/v1/pageclip.css"
       media="screen"
     />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,800&display=swap" rel="stylesheet">
     <!-- Remember to include jQuery :) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-
+    
     <script src="./assets/vex/js/vex.combined.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.0/lottie.js'></script>
+    <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
     <script>
       vex.defaultOptions.className = "vex-theme-wireframe";
+      var loader = document.getElementsByClassName("bodymovin");
+function loadBMAnimation(loader) {
+ var animation = bodymovin.loadAnimation({
+   container: loader,
+   renderer: "svg",
+   loop: true,
+   autoplay: true,
+   path: "clutter.json"
+ });
+}
+for (var i = 0; i < loader.length; i++) {
+ loadBMAnimation(loader[i]);
+}
     </script>
     <link rel="stylesheet" href="./assets/vex/css/vex.css" />
     <link rel="stylesheet" href="./assets/vex/css/vex-theme-wireframe.css" />
@@ -46,33 +66,97 @@
     </label>
       </div>
     </section>
-    
-    <!--<div class="multi-button" style="margin-top: 0px; display:grid; display: none;" >
-      <input name="buttons" type="checkbox" id="form-acc"  />
-      <label for="form-acc">
-        <span>
-         
-          <svg
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="3"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-          </svg>
-         
-        </span>
-        Get Early Access</label
-      >
-      <label><a href="#modal-form" rel="modal:open">Login</a></label>
-    </div>-->
     </div>
 
     <img src = "assets/images/Component 33 – 1.png" id = "main_device" style="position:absolute;  display: block;">
     </div>
+
+    <div id="second" class="second" style="margin-top:60%;">
+      <div class="container font-mont">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="text-align: center; font-weight:bolder;">
+            <h1 style="width:100%; font-weight:bolder;" >Introducing the</h1>
+            <h1 style="width:100%;color:#06de99; font-weight:bolder;" >follege social</h1>
+          </div>
+          <div id = "bodymovin" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 col-lg-12 " style="text-align: center;">
+            <h2 class="font-mont" style="width:90%; font-size:150%; text-align:center;">
+              Removing the <span style="color:#06de99;">clutter</span> from the social
+            </h2>
+
+          </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="third" id="third" style="background-color:black;">
+    <div class="container">
+      <div class="row">
+        <div id = "third" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h2 style="color:white;text-align:center; font-weight: bolder ;" class="font-mont" >Your Sense Of Belonging</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-lg-12 font-mont" style="color:white; text-align:center;">
+        <h3>Draw your true self. No one here . lorem ipsum lorem ipsum </h3></div>
+      </div>
+    </div>
+    </div>
+    <div class="fourth" id="fourth" style="background-color:white;">
+      <div class="container">
+        <div class="row">
+          <div id = "third" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+  
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h2 style="color:black;text-align:center; font-weight: bolder;" class="font-mont" >Your Sense Of Belonging</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-lg-12 font-mont" style="color:black; text-align:center;">
+          <h3 style="font-weight: lighter;">Draw your true self. No one here . lorem ipsum lorem ipsum </h3></div>
+        </div>
+      </div>
+      </div>
+      <div class="fifth" id="fifth" style="background-color:black; color:white;">
+        <div class="container">
+          <div class="row">
+            <div id = "third" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <h2 style="color:white;text-align:center; font-weight: bolder;" class="font-mont" >Your Sense Of Belonging</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-lg-12 font-mont" style="color:white; text-align:center;">
+            <h3 style="font-weight: lighter;">Draw your true self. No one here . lorem ipsum lorem ipsum </h3></div>
+          </div>
+        </div>
+        </div>
+        <div class="sixth" id="sixth" style="background-color:white; color:black;">
+          <div class="container">
+            <div class="row">
+              <div id = "third" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                <h2 style="color:black;text-align:center; font-weight: bolder;" class="font-mont" >Your Sense Of Belonging</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-lg-12 font-mont" style="color:black; text-align:center;">
+              <h3 style="font-weight: lighter;">Draw your true self. No one here . lorem ipsum lorem ipsum </h3></div>
+            </div>
+          </div>
+          </div>
     <form
       action="https://send.pageclip.co/zqs4Uv8TFsNPIZHq9u86Lp3LgNXSUo3j/mailing-form"
       class="pageclip-form modal"
@@ -117,8 +201,21 @@ if(screen.height > screen.width)
   dev.style.top = ((screen.height)*70/100) + 'px';
 
 }
+
+var animation = bodymovin.loadAnimation({
+  container: document.getElementById('bodymovin'),
+  path: 'clutter.json',
+  renderer: 'svg',
+  loop : 'true',
+  autoplay: 'true',
+  name:'clutter',
+})
+  
 </script>
+
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
   </body>
   <script src="./assets/app.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </html>

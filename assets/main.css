@@ -179,4 +179,8 @@ button:hover{cursor: pointer}
         padding: 15px 50px;
         overflow: hidden;
       }
+      .font-mont
+      {
+        font-family: 'Montserrat', sans-serif;
+      }
 /* Scrollbar End */
