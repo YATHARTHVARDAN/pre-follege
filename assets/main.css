@@ -20,11 +20,13 @@ body {
   height: 100vh;
   margin: 0;
   
-  background: rgb(211, 209, 209);
+  background: rgb(255, 255, 255);
 }
 #main
 {
   background-color:black;
+  border-bottom-left-radius:30px;
+  border-bottom-right-radius:30px;
 }
 .multi-button {
   --shadow: 286, 24%, 14%;
