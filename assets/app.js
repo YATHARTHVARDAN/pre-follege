@@ -33,32 +33,6 @@ function pageclipwrapper(data) {
   );
 }
 
-var first = document.getElementById('main');
-var second = document.getElementById('main_sub');
 
-first.style.height = screen.height + 'px';
-first.style.width = screen.width + 'px';
-
-second.style.height = screen.height + 'px';
-second.style.width = screen.width + 'px';
-
-
-var dev = document.getElementById('main_device');
-
-if(screen.width > screen.height + 100)
-{
-  dev.style.width = '40%';
-  dev.style.left = '40%';
-  var dis = 0.7*(screen.height);
-  dev.style.top = dis+'px';
-}
-if(screen.height > screen.width)
-{
-  dev.style.width = '80%';
-  dev.style.left = '10%';
-  
-  dev.style.top = ((screen.height)*70/100) + 'px';
-
-}
 
 
