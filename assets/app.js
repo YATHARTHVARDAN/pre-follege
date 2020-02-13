@@ -56,7 +56,7 @@ if(screen.width > screen.height + 100)
 if(screen.height > screen.width)
 {
   dev.style.height = '60%';
-  dev.style.top = '80%';
+  dev.style.top = '60%';
   dev.style.left = '10%';
 }
 
