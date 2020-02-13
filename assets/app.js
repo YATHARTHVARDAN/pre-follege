@@ -44,19 +44,21 @@ second.style.width = screen.width + 'px';
 
 
 var dev = document.getElementById('main_device');
-dev.style.position = 'absolute';
+
 if(screen.width > screen.height + 100)
 {
   dev.style.width = '40%';
-  var up = dev.style.height;
-
-  dev.style.bottom = '-45%';
   dev.style.left = '40%';
+  var dis = 0.7*(screen.height);
+  dev.style.top = dis+'px';
 }
 if(screen.height > screen.width)
 {
   dev.style.width = '80%';
   dev.style.left = '10%';
+  var dis = 0.8*(screen.height);
+  dev.style.top = dis+'px';
+
 }
 
 
