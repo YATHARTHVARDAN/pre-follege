@@ -132,4 +132,41 @@ input[type="checkbox"] {
 {
   place-items:top;
 }
+
+button:hover{cursor: pointer}
+    button {
+      background: transparent; outline: none;
+      position: relative;
+      border: 2px solid #111;
+      padding: 15px 50px;
+      overflow: hidden;
+    }
+
+    /*button:before (attr data-hover)*/
+    button:hover:before{opacity: 1; -webkit-transform: translate(0,0); transform: translate(0,0);}
+    label:before{
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      -webkit-transform: translate(-100%,0);
+              transform: translate(-100%,0);
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+    }
+      /*button div (button text before hover)*/
+      label:hover div{opacity: 0; -webkit-transform: translate(100%,0); transform: translate(100%,0)}
+      label div{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+      }
 /* Scrollbar End */
