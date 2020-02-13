@@ -27,14 +27,41 @@
     <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
     <script>
       vex.defaultOptions.className = "vex-theme-wireframe";
-      var loader = document.getElementsByClassName("bodymovin");
+      var loader = document.getElementsById("bodymovin");
 function loadBMAnimation(loader) {
  var animation = bodymovin.loadAnimation({
    container: loader,
    renderer: "svg",
-   loop: true,
-   autoplay: true,
+   loop: 'true',
+   autoplay: 'true',
    path: "clutter.json"
+ });
+ var loader2 = document.getElementsById("third");
+function loadBMAnimation(loader2) {
+ var animation = bodymovin.loadAnimation({
+   container: loader,
+   renderer: "svg",
+   loop: 'true',
+   autoplay: 'true',
+   path: "11750-meda-chat.json"
+ });
+ var loader3 = document.getElementsById("fourth");
+function loadBMAnimation(loader3) {
+ var animation = bodymovin.loadAnimation({
+   container: loader,
+   renderer: "svg",
+   loop: 'true',
+   autoplay: 'true',
+   path: "2628-youre-in.json"
+ });
+ var loader4 = document.getElementsById("fifth");
+function loadBMAnimation(loader4) {
+ var animation = bodymovin.loadAnimation({
+   container: loader,
+   renderer: "svg",
+   loop: 'true',
+   autoplay: 'true',
+   path: "9022-jake-shrinder-animation.json"
  });
 }
 for (var i = 0; i < loader.length; i++) {
@@ -93,7 +120,7 @@ for (var i = 0; i < loader.length; i++) {
     </div>
     </div>
 
-    <div class="third" id="third" style="background-color:black;">
+    <div class="third"  style="background-color:black;">
     <div class="container">
       <div class="row">
         <div id = "third" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -109,10 +136,10 @@ for (var i = 0; i < loader.length; i++) {
       </div>
     </div>
     </div>
-    <div class="fourth" id="fourth" style="background-color:white;">
+    <div class="fourth"  style="background-color:white;">
       <div class="container">
         <div class="row">
-          <div id = "third" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div id = "fourth" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
   
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -125,10 +152,10 @@ for (var i = 0; i < loader.length; i++) {
         </div>
       </div>
       </div>
-      <div class="fifth" id="fifth" style="background-color:black; color:white;">
+      <div class="fifth"  style="background-color:black; color:white;">
         <div class="container">
           <div class="row">
-            <div id = "third" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div id = "fifth" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
     
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
