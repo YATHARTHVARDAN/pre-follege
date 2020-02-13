@@ -1,31 +1,98 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>follege!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://s.pageclip.co/v1/pageclip.css"
+      media="screen"
+    />
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Untitled</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
-    <link rel="stylesheet" href="assets/css/Header-Blue.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+    <script src="./assets/vex/js/vex.combined.js"></script>
+    <script>
+      vex.defaultOptions.className = "vex-theme-wireframe";
+    </script>
+    <link rel="stylesheet" href="./assets/vex/css/vex.css" />
+    <link rel="stylesheet" href="./assets/vex/css/vex-theme-wireframe.css" />
+  </head>
 
-<body>
-    <div id="first-page" class="first-page" style="background-color: #000000;">
-        <div id="heading" style="padding-top: 10%;text-align: center;">
-            <p class="font-algreya" style="color: rgb(255,255,255);font-size: 400%;"><strong>follege</strong></p>
+  <body>
+    <div id="main">
+      <div id="main_sub">
+    <section class="hero" style="margin-bottom:100px !important;">
+      <div class="hero-body">
+        <div class="container cont has-text-centered aly">
+          <h1 class="title has-text-grey-lighter has-text-weight-bold">
+            follege
+          </h1>
+          <h2 class="subtitle has-text-grey-light">
+            College at your
+            <strong class="has-text-grey-light">fingertips</strong> <br />
+            <span class="soon">Coming Soon™</span>
+          </h2>
         </div>
-        <div id="about" class="about font-sans" style="width:100%;text-align:center;">
-            <p style="font-size: 110%;width: 100%;"><strong>asjhgdjsahgjhsagjghdasjhgsajhgdjsahgajshgdajshgjahsgjasgjdasgjhasgjsahgjhagdjhgasjgsahjdgasjhgasjhgsajhgdhsjagjsgajhgsajhgsahjgsadjhgjashgsajhgjasgj</strong></p>
-        </div>
-        <div style="text-align: center;"><button class="btn btn-primary font-sans" type="button" style="background-color: #06d399;padding-left: 8%;padding-right: 8%;padding-top: 2%;padding-bottom: 2%;font-size: 25px;"><strong>REQUEST EARLY</strong>&nbsp;<strong>ACCESS</strong><br></button></div>
+      </div>
+      <div style="width: fit-content; text-align: center;">
+      <input  type="checkbox" id = "form-acc"/>
+    <label for="form-acc">
+      Get Early Access
+    </label>
+      </div>
+    </section>
+    
+    <!--<div class="multi-button" style="margin-top: 0px; display:grid; display: none;" >
+      <input name="buttons" type="checkbox" id="form-acc"  />
+      <label for="form-acc">
+        <span>
+         
+          <svg
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="3"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+          </svg>
+         
+        </span>
+        Get Early Access</label
+      >
+      <label><a href="#modal-form" rel="modal:open">Login</a></label>
+    </div>-->
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
 
+    <img src = "assets/images/Component 33 – 1.svg" id = "main_device" style="display: block;">
+    </div>
+    <form
+      action="https://send.pageclip.co/zqs4Uv8TFsNPIZHq9u86Lp3LgNXSUo3j/mailing-form"
+      class="pageclip-form modal"
+      id="modal-form"
+      method="post"
+    >
+      <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+      <input type="text" name="name" value="test" />
+      <input type="email" name="email" value="test@te.com" />
+
+      <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+      <button type="submit" class="pageclip-form__submit">
+        <span>Send</span>
+      </button>
+    </form>
+    
+
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+  </body>
+  <script src="./assets/app.js"></script>
 </html>
