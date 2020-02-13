@@ -21,6 +21,9 @@ $(document).ready(function() {
     }
   });
 });
+$document.ready(function(){
+  
+})
 
 function pageclipwrapper(data) {
   Pageclip.send(
