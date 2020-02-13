@@ -56,7 +56,7 @@ if(screen.height > screen.width)
 {
   dev.style.width = '80%';
   dev.style.left = '10%';
-  var dis = 0.6*(screen.height);
+  var dis = 0*(screen.height);
   dev.style.top = dis+'px';
 
 }
