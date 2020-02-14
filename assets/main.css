@@ -183,4 +183,10 @@ button:hover{cursor: pointer}
       {
         font-family: 'Montserrat', sans-serif;
       }
+
+  .square
+  {
+    display: grid;
+    place-content:center;
+  }
 /* Scrollbar End */
