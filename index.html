@@ -39,7 +39,7 @@ function loadBMAnimation(loader) {
  var loader2 = document.getElementsById("third");
 function loadBMAnimation(loader2) {
  var animation = bodymovin.loadAnimation({
-   container: loader,
+   container: loader2,
    renderer: "svg",
    loop: 'true',
    autoplay: 'true',
@@ -48,7 +48,7 @@ function loadBMAnimation(loader2) {
  var loader3 = document.getElementsById("fourth");
 function loadBMAnimation(loader3) {
  var animation = bodymovin.loadAnimation({
-   container: loader,
+   container: loader3,
    renderer: "svg",
    loop: 'true',
    autoplay: 'true',
@@ -57,7 +57,7 @@ function loadBMAnimation(loader3) {
  var loader4 = document.getElementsById("fifth");
 function loadBMAnimation(loader4) {
  var animation = bodymovin.loadAnimation({
-   container: loader,
+   container: loader4,
    renderer: "svg",
    loop: 'true',
    autoplay: 'true',
@@ -66,6 +66,15 @@ function loadBMAnimation(loader4) {
 }
 for (var i = 0; i < loader.length; i++) {
  loadBMAnimation(loader[i]);
+}
+for (var i = 0; i < loader2.length; i++) {
+ loadBMAnimation(loader2[i]);
+}
+for (var i = 0; i < loader3.length; i++) {
+ loadBMAnimation(loader3[i]);
+}
+for (var i = 0; i < loade4r.length; i++) {
+ loadBMAnimation(loader4[i]);
 }
     </script>
     <link rel="stylesheet" href="./assets/vex/css/vex.css" />
