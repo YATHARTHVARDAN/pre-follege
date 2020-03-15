@@ -4,6 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>follege!</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+
+    
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
@@ -14,11 +21,6 @@
       href="https://s.pageclip.co/v1/pageclip.css"
       media="screen"
     />
-    <style>
-      html{
-        scroll-behavior: smooth;
-      }
-    </style>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
@@ -89,6 +91,8 @@ for (var i = 0; i < loader4[i].length; i++) {
   </head>
 
   <body>
+
+
     <div id="main">
       <div id="main_sub">
     <section class="hero" style="margin-bottom:100px !important;padding-top: 0px; margin-top:-30%">
@@ -102,7 +106,7 @@ for (var i = 0; i < loader4[i].length; i++) {
           </h2>
         </div>
       </div>
-      <div style="width: fit-content; text-align: center; padding-left:15%;">
+      <div style="width: fit-content; text-align: center; padding-left:28%;">
       <input  type="checkbox" id = "form-acc" />
     <label for="form-acc" style="color:white; background-color:#06de99; padding-top:5px; padding-bottom:5px; padding-right:10px; padding-left:10px; border-radius: 10px;">
       Request Invite
@@ -113,7 +117,7 @@ for (var i = 0; i < loader4[i].length; i++) {
 
     <img src = "assets/images/Component 33 – 1.png" id = "main_device" style="position:absolute;  display: block;">
     </div>
-
+   
     <div id="second" class="second" style="margin-top:60%;">
       <div class="container font-mont">
         <div class="row" style="margin-top:2%;">
@@ -142,7 +146,7 @@ for (var i = 0; i < loader4[i].length; i++) {
     </div>
     </div>
 
-    <div class="third"  style="background-color:black;">
+    <div class="third"  style="background-color:black;  padding-top:2%; padding-bottom:1%;">
     <div class="container">
       <div class="row" style="margin-top:2%;">
         <div id = "third" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 square">
@@ -162,7 +166,7 @@ for (var i = 0; i < loader4[i].length; i++) {
       </div>
     </div>
     </div>
-    <div class="fourth"  style="background-color:white;">
+    <div class="fourth"  style="background-color:white;  padding-top:2%; padding-bottom:1%;">
       <div class="container">
         <div class="row" style="margin-top:2%;">
           <div id = "fourth" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 square">
@@ -182,7 +186,7 @@ for (var i = 0; i < loader4[i].length; i++) {
         </div>
       </div>
       </div>
-      <div class="fifth"  style="background-color:black; color:white;">
+      <div class="fifth"  style="background-color:black; color:white; padding-top:2%; padding-bottom:1%;">
         <div class="container">
           <div class="row" style="margin-top:2%;">
             <div id = "fifth" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 square">
@@ -202,7 +206,9 @@ for (var i = 0; i < loader4[i].length; i++) {
           </div>
         </div>
         </div>
-    <a href="apply.html">Change here</a>
+        <div class="foot" style="align-items: baseline; padding:0px; background-color:black; color:white;  width:100%; text-align: center; ">
+          <p class="font_san" style="padding:0px; margin-bottom:0px;">Follege Inc. &copy; 2020</p>
+        </div>
         
     <form
       action="https://send.pageclip.co/zqs4Uv8TFsNPIZHq9u86Lp3LgNXSUo3j/mailing-form"
@@ -219,9 +225,17 @@ for (var i = 0; i < loader4[i].length; i++) {
         <span>Send</span>
       </button>
     </form>
-
+    <p class="font-mont" id="App" style="color:white; background-color:black; padding:5px 10px 5px 10px; font-size:120%; font-weight:bolder; border-radius: 5px;text-align:center; position:fixed; bottom:180px; right:20px;"><a href="apply.html" style="text-decoration: none; color:white;">Apply</a></p>
     <p class="font-mont" style="color:white; background-color:black; padding:5px 10px 5px 10px; font-size:40px; font-weight:bolder; border-radius: 5px;text-align:center; position:fixed; bottom:20px; right:20px;"><a href="#main" style="text-decoration: none; color:white;">&#8593;</a></p>
     <a href="https://instagram.com/follege.app" style="text-align: center;"><img src="assets/images/38-instagram-3-512.png" style="width:50px; position: fixed; bottom:120px; right:20px; background-color: white; border-radius:45px;"/></a>
+
+    <div class="design" id="Home" style="width:80px; border-color:white; position:fixed;">
+      <a href="index.html"><p >HOME</p></a>
+  </div>
+  <div class="design" id ="Apply" style="width:80px; border-color:white; position:fixed; ">
+    <a href="apply.html"><p >Apply</p></a>,
+</div>
+
 <script>
   var first = document.getElementById('main');
 var second = document.getElementById('main_sub');
@@ -231,7 +245,11 @@ first.style.width = screen.width + 'px';
 
 second.style.height = screen.height + 'px';
 second.style.width = screen.width + 'px';
+var apply = document.getElementById("App");
 
+var home = document.getElementById("Home");
+var up = screen.height - 100;
+apply.style.bottom = up + "px";
 
 var dev = document.getElementById('main_device');
 
