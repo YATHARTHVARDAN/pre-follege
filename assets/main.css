@@ -19,7 +19,6 @@
 body {
   height: 100vh;
   margin: 0;
-  
   background: rgb(255, 255, 255);
 }
 #main
@@ -143,4 +142,128 @@ input[type="checkbox"] {
     display: grid;
     place-content:center;
   }
-/* Scrollbar End */
+
+  .anim.register
+  {
+    width:100%;
+  }
+  .box
+  {
+    text-align:center;
+    box-shadow:none;
+    background-color: transparent;
+    padding-top:10px;
+    padding-bottom:10px;
+    align-items: center;
+  }
+
+  .design
+  { 
+    padding: 0px;
+    align-items: center;
+    border-radius:5px;
+    font-weight:bolder;
+  }
+
+  .design p
+  {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding-top:6px;
+    width:100%;
+    padding-bottom:6px;
+    border-radius:10px;
+   }
+
+  @keyframes topleft
+  {
+    from{top:180px; right:5px;}
+    to{ top:160px; right:125px; }
+  }
+
+  @keyframes toleft
+  {
+    from{top:180px; right:5px;}
+    to{ top:215px; right:100px;}
+  }
+  @keyframes bottomleft
+  {
+    from{top:180px; right:5px;}
+    to{top:240px; right:5px;}
+  }
+
+  @keyframes topleftback
+  {
+    from{ top:160px; right:125px;}
+    to{top:180px; right:5px;}
+    
+  }
+  @keyframes toleftback
+  {
+    from{ top:215px; right:100px;}
+    to{top:180px; right:5px;}
+    
+  }
+  @keyframes bottomleftback
+  {
+    from{top:240px; right:5px;}
+    to{top:180px; right:5px;}
+    
+  }
+
+  .font_san
+  {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .font-Al
+  {
+    font-family: 'Alegreya Sans', sans-serif;
+  }
+  .description
+  {
+    font-weight:bolder;
+    margin-bottom:5%;
+  }
+  #menu:hover
+  {
+    cursor: pointer;
+  }
+  #Apply
+  { display:none;
+     animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+  }
+  #Home
+  {
+    display:none;
+    animation-fill-mode: forwards;
+    animation-duration:0.5s;
+    animation-delay:0.2s;
+  }
+  #Team
+  {
+    display:none;
+    animation-fill-mode:forwards;
+    animation-duration:0.5s;
+    animation-delay: 0.4s;
+  }
+
+  ::-webkit-scrollbar{
+    display:none;
+
+  }
+  body
+  {
+    margin-top: 0px;
+    padding-top:0px;
+    
+  }
+.back2,.back3,.back4
+{
+  display: none;
+}
+
+  
+  /* Scrollbar End */
