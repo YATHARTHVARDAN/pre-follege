@@ -178,14 +178,14 @@ input[type="checkbox"] {
 
   @keyframes topleft
   {
-    from{top:180px; right:5px;}
-    to{ top:160px; right:125px; }
+    from{top:0px; right:5px;}
+    to{ top:160px; right:5px; }
   }
 
   @keyframes toleft
   {
-    from{top:180px; right:5px;}
-    to{ top:215px; right:100px;}
+    from{top:0px; right:5px;}
+    to{ top:100px; right:5px;}
   }
   @keyframes bottomleft
   {
@@ -211,12 +211,13 @@ input[type="checkbox"] {
     to{top:180px; right:5px;}
     
   }
+ 
 
   .font_san
   {
     font-family: 'Open Sans', sans-serif;
   }
-  .font-Al
+  .font_Al
   {
     font-family: 'Alegreya Sans', sans-serif;
   }
@@ -260,10 +261,20 @@ input[type="checkbox"] {
     padding-top:0px;
     
   }
-.back2,.back3,.back4
-{
-  display: none;
-}
 
-  
-  /* Scrollbar End */
+  span.same
+  {
+    color:rgb(160, 160, 160);
+    font-size:85%;
+    font-weight:lighter;
+  }
+  span.left
+  {
+    position:absolute;
+    left:3%;
+  }
+  span.right
+  {
+    position:absolute;
+    right:3%;
+  }
