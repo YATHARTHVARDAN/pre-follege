@@ -15,6 +15,11 @@
       href="https://s.pageclip.co/v1/pageclip.css"
       media="screen"
     />
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
@@ -32,22 +37,39 @@
     <link rel="stylesheet" href="./assets/vex/css/vex.css" />
     <link rel="stylesheet" href="./assets/vex/css/vex-theme-wireframe.css" />
     </head>
-    <body>
 
-
+    <body id="bod">
         <!-- head section -->
-        <div class="head" id="h" style="text-align:center; margin-bottom:5%;">
-            <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6" style="text-align:center; margin-left:auto; margin-right:auto;">
-            <img src="assets/images/follege-main.png" style="width:85%; margin-left:auto; margin-right:auto;"/>
-        </div>
-        </div>
-        </div>
+        <div class="head" id="h" style="margin-bottom:5%; background-color:black; padding-top:3%;text-align:center; padding-bottom:1%; align-items: baseline;">
+            <!--Menu Button-->
+          <p style="margin:0px; padding:0px;"> <span class="center font_Al" style="color:white; font-size:170%;">follege</span> <span class="right cl" onclick="moveOut()"><img src="assets/images/menu.png" style="width:30px;"></span> </p>
+          <div class="design" id ="Apply" style="width:80px; position:fixed; top:0; right:0px; display:none;">
+            <p >Apply</p></a>
+          </div>
+            <div class="design" id="Home" style="width:80px; position:fixed; top:0px; right:0px; display:none;">
+                <a href="index.html" style="text-decoration: none; text-emphasis: none;"><p >HOME</p></a>
+            </div>
 
 
+            <!--End of menu button-->
+        </div>
         <!-- End of head section -->
-        <!--  team section -->
-        <div class="team">
+        <div class="text" style="text-align:center; width:100%; padding-left:3%; padding-right:3%; ">
+            <div class="top" style="margin-bottom:5%; text-align: center;">
+                <p style="width:100%;"><h2 id = "h2" style="color:black; font-weight:bolder;"><span style="margin-right:5%;">A P P L Y </span>  <span style="margin-right:5%;"> F O R </span>  <span style="margin-right:5%;"> T H E </span></h2></p>  <h2 id = "h21" style="font-weight:bolder;"><p style="width:100%;"><span style="margin-right:10px;"> I N T E R N S H I P ! </span></p></h2>
+            </div>
+            <div class="middle">
+                <h5 id = "h5">Be More than just an intern</h5>
+            </div>
+            <div class="last ">
+                <h4 id = "h4" style="color:#06de99;">Work with Team Follege</h4>
+            </div>
+        </div>
+
+
+
+        <!--  registration section -->
+        <div class="register" id="register" style="margin-bottom:4%;">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 back1" id="back1" style="align-items: baseline;">
@@ -119,49 +141,23 @@
                     </div>
                 </div>
             </div>
-            <!-- End of team section -->
-            
-            <div class="design" id ="Apply" style="width:80px; position:fixed; top:180px; right:5px;">
-                <p >Apply</p>
-            </div>
-            <div class="design" id="Home" style="width:80px; position:fixed; top:180px; right:5px;">
-                <p >HOME</p>
-            </div>
-            <div class="design" id = "Team" style="width:80px; position:fixed; top:180px; right:5px;">
-                <p >Team</p>
-            </div>
-            <div class="design" id="Menu" onclick = "moveOut()" style="width:80px; position:fixed; top:180px; right:5px;">
-                <p >MENU</p>
-            </div>
-            
-            <!-- menu for mobile -->
-            <!-- end of menu for mobile -->
-<!-- Menu for desktop -->
-<div class="navbar" style="display:none; background-color:black; position:fixed; top:0px; width:100%; align-items: baseline;">
-    <div class="follege" style="padding: 0px;">
-        <h3 style="font-family: 'Alegreya Sans', sans-serif; color:white; font-size: 210%; padding: 0px; ">follege</h3>
-    </div>
-    <div class="home font_san"  style="color:white; font-weight:bolder;  width:fit-content; margin-left:50%;margin-right:1px;">
-        <h4>HOME</h4> 
-    </div>
-    <div class="Team font_san" style="color:white; font-weight:bolder;  width:fit-content; margin-right:0px;">
-    <h4>TEAM</h4>
-    </div>
-    <div class="Team font_san" style="color:white; font-weight:bolder;  font-size:larger; font-weight:bolder; width:fit-content;">
-        <button class="primary" style=" color:#06de99; border-width:2px; border-color:#06de99; background-color:transparent;">
-        APPLY
-        </button>
-        </div>    
-</div>
-<!--End -->
+            <!-- end of Registration section -->
 
-<div class="foot" id = "foot" style="align-items: baseline; padding:0px; background-color:black; color:white; width:100%; text-align: center; ">
-    <p class="font_san" style="padding:0px; margin-bottom:0px;">Follege Inc. &copy; 2020</p>
+
+
+<div class="foot" id = "foot" style="position:fixed; bottom:0px; align-items: baseline; padding-bottom:5px; padding-top:5px; background-color:black; color:white; width:100%; text-align: center; ">
+    <p style="width:100%; padding-bottom:2%;"><span class="left same">All Rights Reserved</span> <span class="right same">Follege Inc. &copy;2020</span></p>
+    <p class="font_san" style="padding:0px; margin-bottom:0px;">follegeapp@gmail.com</p>
   </div>
+  <p class="font-mont" style="color:white; background-color:black; padding:5px 10px 5px 10px; font-size:40px; font-weight:bolder; border-radius: 5px;text-align:center; position:fixed; bottom:90px; right:20px;"><a href="#h" style="text-decoration: none; color:white;">&#8593;</a></p>
+  <a href="https://instagram.com/follege.app" style="text-align: center;"><img src="assets/images/38-instagram-3-512.png" style="width:50px; position: fixed; bottom:190px; right:20px; background-color: white; border-radius:45px;"/></a>
 
 <script>
+
     var foot = document.getElementById("foot").style.offsetHeight;
     var head = document.getElementById("h");
+    var register = document.getElementById('register');
+    head.style.width = screen.width + "px";
   var ht = head.offsetHeight;
 var one = document.getElementById("Apply");
 var two = document.getElementById("Home");
@@ -172,68 +168,33 @@ var b1 = document.getElementById('back1');
 var b2 = document.getElementById('back2');
 var b3 = document.getElementById('back3');
 var b4 = document.getElementById('back4');
-
-var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+var j = 0;
+function inc()
+{
+    j=j+1;
+}
+function dec()
+{
+    j=j-1;
+}
+var isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
 		var element = document.getElementById('text');
-		if (isMobile) {
-            var minus = screen.height - ht;
-            b1.style.marginTop = b2.style.marginTop = b3.style.marginTop = b4.style.marginTop = "20%";
-  			b1.style.height = minus + "px"; b2.style.height = minus + "px"; b3.style.height = minus + "px"; b4.style.height = minus + "px";
-              b1.style.width = screen.width + "px"; b2.style.width = screen.width + "px"; b3.style.width = screen.width + "px"; b4.style.width = screen.width + "px";
- 		
-         if(b1.style.display != "none")
-         {
-            var scrollPos = 0;
-window.addEventListener('scroll', function(){
-  if ((document.body.getBoundingClientRect()).top > scrollPos){
-  }
-	else{b2.style.display = "block";
-      b1.style.display = "none";}
-	scrollPos = (document.body.getBoundingClientRect()).top;
-});
-         }   
-         
-         if(b1.style.display != "none")
-         {
-            var scrollPos = 0;
-window.addEventListener('scroll', function(){
-  if ((document.body.getBoundingClientRect()).top > scrollPos){
-    b1.style.display = "block";
-      b2.style.display = "none";}
-	else{b3.style.display = "block";
-      b2.style.display = "none";}
-	scrollPos = (document.body.getBoundingClientRect()).top;
-});
-         }
-         if(b1.style.display != "none")
-         {
-            var scrollPos = 0;
-window.addEventListener('scroll', function(){
-  if ((document.body.getBoundingClientRect()).top > scrollPos){
-    b2.style.display = "block";
-      b3.style.display = "none";}
-	else{b4.style.display = "block";
-      b3.style.display = "none";}
-	scrollPos = (document.body.getBoundingClientRect()).top;
-});
-         }
-         if(b4.style.display != "none")
-         {
-            var scrollPos = 0;
-window.addEventListener('scroll', function(){
-  if ((document.body.getBoundingClientRect()).top > scrollPos){
-    b3.style.display = "block";
-      b4.style.display = "none";
-  }
-	else{}
-	scrollPos = (document.body.getBoundingClientRect()).top;
-});
-         }
-         
-         } else {
-            four.style.display = "none";
-            		}
+		if (isMobile && screen.width <= 730) {
+            head.style.dislay="block";
+            var bod = document.getElementById("bod");
+            bod.style.height = screen.height + "px";
+            bod.style.width = screen.width + "px";
+            register.style.marginTop="10%";
+            register.style.marginBottom = "20%";
 
+         } else {var h2 = document.getElementById("h2");var h21 = document.getElementById("h21");
+           h2.style.fontSize = "310%"; h21.style.fontSize = "310%";
+            head.style.display = "none";
+            var h4 = document.getElementById("h4");
+            h4.style.fontSize = "300%";
+            var h5  =document.getElementById("h5");
+            h5.style.fontSize = "210%";
+            		}
 
 
 
@@ -241,15 +202,15 @@ window.addEventListener('scroll', function(){
 function moveOut()
 {   i = i+1;
   if(i==1){
-    one.style.display = "block"; one.style.animationName = "topleft"; 
+    one.style.display = "block";  one.style.animationName = "topleft"; 
     two.style.display = "block"; two.style.animationName = "toleft";
-    three.style.display = "block"; three.style.animationName = "bottomleft";
+    
     }
     else{
         i=0;
-        one.style.animationName = "topleftback";
-        two.style.animationName = "toleftback";
-        three.style.animationName = "bottomleftback";
+        one.style.display = "none";
+        two.style.display="none";
+       
     }
 }
 function change()
