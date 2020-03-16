@@ -97,20 +97,18 @@ for (var i = 0; i < loader4[i].length; i++) {
       <div id="main_sub">
     <section class="hero" style="margin-bottom:100px !important;padding-top: 0px; margin-top:-30%">
       <div class="hero-body">
-        <div class="container cont has-text-centered aly">
+        <div class="container cont has-text-centered aly" >
           <img src="assets/images/output-onlinepngtools (30).png" style="width:100%;"/>
           <h2 class="subtitle has-text-grey-light">
             College at your
             <strong class="has-text-grey-light">fingertips</strong> <br />
             <span class="soon">Coming Soon™</span>
           </h2>
-        </div>
-      </div>
-      <div style="width: fit-content; text-align: center; padding-left:28%;">
-      <input  type="checkbox" id = "form-acc" />
+          <input  type="checkbox" id = "form-acc" />
     <label for="form-acc" style="color:white; background-color:#06de99; padding-top:5px; padding-bottom:5px; padding-right:10px; padding-left:10px; border-radius: 10px;">
       Request Invite
     </label>
+        </div>
       </div>
     </section>
     </div>
@@ -118,33 +116,31 @@ for (var i = 0; i < loader4[i].length; i++) {
     <img src = "assets/images/Component 33 – 1.png" id = "main_device" style="position:absolute;  display: block;">
     </div>
    
-    <div id="second" class="second" style="margin-top:60%;">
-      <div class="container font-mont">
+    <div class="row" id = "top_heading" >
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center; font-weight:bolder;">
+        <h1 style="width:100%; font-weight:bolder;" id ="top_heading_h1" >Introducing the <span style="color:#06de99;">follege social</span></h1>
+      </div>
+    </div>
+    <div class="second"  id ="second" style="background-color:white;  padding-top:2%; padding-bottom:1%;">
+      <div class="container">
         <div class="row" style="margin-top:2%;">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="text-align: center; font-weight:bolder;">
-            <h1 style="width:100%; font-weight:bolder;" >Introducing the</h1>
-            <h1 style="width:100%;color:#06de99; font-weight:bolder;" >follege social</h1>
+          <div id = "fourth" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 square">
+            <lottie-player
+            src="https://assets8.lottiefiles.com/packages/lf20_3p3LG9.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+        </lottie-player>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 square">
+            <h2 style="color:black;text-align:center; font-weight: bolder;" class="font-mont" >Removing the <span style="color:#06de99;">clutter</span> from the social</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 square">
-            <lottie-player
-            src="https://assets8.lottiefiles.com/packages/lf20_3p3LG9.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
-        </lottie-player>   
-          </div>
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 square" style="text-align: center;">
-            <h2 class="font-mont" style="width:90%; font-size:150%; font-weight: bolder; text-align:center;">
-              Removing the <span style="color:#06de99;">clutter</span> from the social
-            </h2>
-
-          </div>
+          <div class="col-xs-12 col-lg-12 font-mont" style="color:black; text-align:center;">
+          <h3 style="font-weight: lighter;">No BS, nothing scattered,  </h3>
+          <h3 style="font-weight:lighter;">Find everything and anything relevant to your college life here</h3>
+        </div>
+        </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12 col-lg-12 font-mont" style="color:black; text-align:center;">
-        <h3>No BS, nothing scattered, Find everything and anything relevant to your college life here </h3></div>
       </div>
-    </div>
-    </div>
 
     <div class="third"  style="background-color:black;  padding-top:2%; padding-bottom:1%;">
     <div class="container">
@@ -237,8 +233,10 @@ for (var i = 0; i < loader4[i].length; i++) {
 </div>
 
 <script>
+  var top_heading =  document.getElementById("top_heading");
   var first = document.getElementById('main');
 var second = document.getElementById('main_sub');
+var top_heading_h1 = document.getElementById('top_heading_h1');
 
 first.style.height = screen.height + 'px';
 first.style.width = screen.width + 'px';
@@ -253,15 +251,20 @@ var home = document.getElementById("Home");
 var dev = document.getElementById('main_device');
 
 var isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
-		if (isMobile && screen.width <= 730) {
+var isIpad  =/iPad/i.test(navigator.userAgent);		
+    
+    if (isMobile && screen.width <= 730) {
       var up = screen.height - 180;
 apply.style.bottom = up + "px";
+top_heading.style.marginTop = "60%";
     }
-    else{  apply.style.bottom = "180px"; }
+    else if(isIpad)
+    { top_heading.style.marginTop = "80%"; }
+    else{  apply.style.bottom = "180px"; top_heading.style.marginTop = "40%"; top_heading_h1.style.fontSize = "300%";}
 
 
 if(screen.width > screen.height + 100)
-{
+{ 
   dev.style.width = '40%';
   dev.style.left = '40%';
   var dis = 0.7*(screen.height);
