@@ -107,8 +107,9 @@
                                 <div class="description font_san">
                                     For coding enthusiasts, Primary role will be either web or app development 
                                 </div>
+                                
                                 <div class="register">
-                                    <a href="https://forms.gle/FeUAJDfk7owAwth47" style="text-decoration: none; text-emphasis: none;"><button class="btn btn-warning font_san" style="font-weight:bolder;">Web/App developer </button></a>
+                                    <button onclick="development()" class="btn btn-warning font_san" style="font-weight:bolder;">Web/App developer</button>
                                 </div>
                                 
                             </div>
@@ -124,8 +125,9 @@
                                         <div class="description font_san">
                                             Show your love for designing here, let's make something beautiful!
                                         </div>
+                                        <br>
                                         <div class="register">
-                                            <a href="https://forms.gle/uby4NddxVmLD8eft5" style="text-decoration: none; text-emphasis: none;"><button class="btn btn-warning font_san" style="font-weight:bolder;">Graphic Designer</button></a>
+                                            <button onclick="graphic()" class="btn btn-warning font_san" style="font-weight:bolder;">Graphic Designer</button>
                                         </div>
                                     </div>
                         </div>
@@ -139,8 +141,9 @@
                                         <div class="description font_san">
                                             Does market thrill you? Good for you, we got some thrilling tasks for you!
                                         </div>
+                                        <br>
                                         <div class="register">
-                                            <a  href="https://forms.gle/bfA6BHVMPP4Y6y4d9" style="text-emphasis: none; text-decoration: none;"><button class="btn btn-warning font_san" style="font-weight:bolder;">Marketing and Research</button></a>
+                                            <button onclick="market()" class="btn btn-warning font_san" style="font-weight:bolder;">Marketing and Research</button>
                                         </div>
                                         
                                     </div>
@@ -156,8 +159,9 @@
                                         <div class="description font_san">
                                             Product Management is the future! Let's build an amazing product.
                                         </div>
+                                        <br>
                                         <div class="register">
-                                            <a href="https://forms.gle/vzsvp3sqi2SShJsAA" style="text-emphasis: none; text-decoration: none;"><button class="btn btn-warning font_san" style="font-weight:bolder;" >Product Management</button></a>
+                                            <button onclick="product()" class="btn btn-warning font_san" style="font-weight:bolder;" >Product Management</button>
                                         </div>
                                     </div>
                         </div>
@@ -172,9 +176,10 @@
     <p style="width:100%; padding-bottom:2%;"><span class="left same">All Rights Reserved</span> <span class="right same">Follege Inc. &copy;2020</span></p>
     <p class="font_san" style="padding:0px; margin-bottom:0px;">follegeapp@gmail.com</p>
   </div>
-   <p class="font-mont" style="color:white; background-color:black; padding:5px 10px 5px 10px; font-size:40px; font-weight:bolder; border-radius: 5px;text-align:center; position:fixed; bottom:20px; right:20px;"><a href="#t" style="text-decoration: none; color:white;">&#8593;</a></p>
+  <p class="font-mont" id = "li1" style="color:white; background-color:black; padding:5px 10px 5px 10px; font-size:40px; font-weight:bolder; border-radius: 5px;text-align:center; position:fixed; bottom:90px; right:20px;"><a  href="#t" style="text-decoration: none; color:white;">&#8593;</a></p>
   
   <a href="https://instagram.com/follege.app" style="text-align: center; align-items: baseline;"><img src="assets/images/38-instagram-3-512.png" style="width:50px; position: fixed; bottom:120px; right:20px; background-color:white; padding-left:0.6px; padding-bottom:1.2px;border-top-left-radius:  25px; border-top-right-radius: 25px; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; "/></a>
+
 <script>
     var li1 = document.getElementById("li1");
   var for_large = document.getElementById('for_large');
@@ -191,6 +196,23 @@ var four = document.getElementById("Menu");
 
 var l = document.getElementById("top_left");
 var r = document.getElementById("top_right");
+
+function development()
+{
+    window.open("https://forms.gle/FeUAJDfk7owAwth47");
+}
+function product()
+{
+    window.open("https://forms.gle/vzsvp3sqi2SShJsAA");
+}
+function graphic()
+{
+    window.open("https://forms.gle/uby4NddxVmLD8eft5");
+}
+function market()
+{
+    window.open("https://forms.gle/bfA6BHVMPP4Y6y4d9");
+}
 
 
 var b1 = document.getElementById('back1');
