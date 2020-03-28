@@ -8,6 +8,27 @@
       html{
         scroll-behavior: smooth;
       }
+      @keyframes movedown {
+        from{height:0px;opacity:0;}
+        to{height:200px; opacity:1;}
+      }
+      .outer
+      {
+        margin-bottom:2%;
+      }
+     
+      .in_intro
+      {
+
+        animation-name:movedown;
+        animation-duration:1s;
+        animation-delay:0s;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        border-bottom-width:1px;
+        border-bottom-color:grey;
+      }
+     
     </style>
 
     
@@ -145,7 +166,7 @@ for (var i = 0; i < loader4[i].length; i++) {
     <div class="third"  style="background-color:black;  padding-top:2%; padding-bottom:1%;">
     <div class="container">
       <div class="row" style="margin-top:2%;">
-        <div id = "third" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 square">
+        <div id = "third" id="anime" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 square">
       <lottie-player
       src="https://assets8.lottiefiles.com/packages/lf20_sU4ydN.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
   </lottie-player>
@@ -165,7 +186,7 @@ for (var i = 0; i < loader4[i].length; i++) {
     <div class="fourth"  style="background-color:white;  padding-top:2%; padding-bottom:1%;">
       <div class="container">
         <div class="row" style="margin-top:2%;">
-          <div id = "fourth" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 square">
+          <div id = "fourth"id="anime" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 square">
             <lottie-player
             src="https://assets3.lottiefiles.com/datafiles/iMAIoaSAs29w2xR/data.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
         </lottie-player>
@@ -182,7 +203,7 @@ for (var i = 0; i < loader4[i].length; i++) {
         </div>
       </div>
       </div>
-      <div class="fifth"  style="background-color:black; color:white; padding-top:2%; padding-bottom:1%;">
+      <div class="fifth" id="anime" style="background-color:black; color:white; padding-top:2%; padding-bottom:1%;">
         <div class="container">
           <div class="row" style="margin-top:2%;">
             <div id = "fifth" class="col-xs-12 col-sm-12 col-md-6 col-lg-6 square">
@@ -202,6 +223,282 @@ for (var i = 0; i < loader4[i].length; i++) {
           </div>
         </div>
         </div>
+        <div class="sixth"  style="background-color:white;  padding-top:2%; padding-bottom:1%;">
+          <div class="container-fluid" style="width:100%; padding-left:2%; padding-right:2%;">
+    
+    <div class="row justify-content" id="team" style="padding-left:5%; padding-right:5%;">
+      <div class="col-lg-1"></div>  
+      <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(0)"  style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%; padding-bottom:0.5px;">Abhinav Singh</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%; padding-top:0px;">CEO</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(0)" style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" onclick="window.open('https://www.google.com/')" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(1)"  style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%;; padding-bottom:0.5px;">Arindam Nath</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%;padding-top:0px;">Product Mentor</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(1)" style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(2)"  style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%; padding-bottom:0.5px;">Aman Garg</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%;padding-top:0px;">CTO</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(2)" style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(3)"  style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%; padding-bottom:0.5px;">Aditya Verma</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%;padding-top:0px;">COO</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(3)" style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(4)"  style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%; padding-bottom:0.5px;">Deepanshu Pal</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%;padding-top:0px;">CMO</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(4)" style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1"></div>
+        <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(5)"  style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%; padding-bottom:0.5px;">Yatharth Vardan</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%;padding-top:0px;">Head Of Engineering</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(5)" style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(6)"  style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%; padding-bottom:0.5px;">Dhananjay Deshwal</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%;padding-top:0px;">App Dev Head</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(6)" style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(7)"  style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%; padding-bottom:0.5px;">Aaron Paul Jacob</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%;padding-top:0px;">App Dev Head</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(7)" style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(8)" style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%; padding-bottom:0.5px;">Isha Anand</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%;padding-top:0px;">Content and Strategy</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(8)" style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(9)" style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%; padding-bottom:0.5px;">Pulkit Singh</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%;padding-top:0px;">Marketing Head</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(9)" style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-1"></div>
+        <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(10)" style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%; padding-bottom:0.5px;">Aditya Kumar</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%;padding-top:0px;">Video and Media</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(10)" style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(11)" style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%; padding-bottom:0.5px;">Abhishek Aryan</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%;padding-top:0px;">Tech R&D</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(11)"style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-2 col-md-4 col-lg-2">
+          <div class="outer" id = "outer" style="border-radius:20px; border-width:0px; border-color:transparent; background-color:white; width:165px; height:200px;">
+            <div class="card" style="border-color: transparent; border-width:0px;">
+              <div class="photo_name" id = "photo_name1" onclick="seeit(12)" style="display:block;">
+                <div class="image" style="width:100%; height:160px;">
+                </div>
+                <div class="bottom_text" style="height:40px; width:100%; text-align:center; background-color:white;">
+                  <p class="font-mont"id = "card_name" style="color:grey; font-size:12px; margin-bottom:0%; padding-bottom:0.5px;">Paras Goel</p>
+                  <p id = "card_post" class="font-mont" style="color:grey; font-size:12px;margin-top: 0%;padding-top:0px;">Finance & Legal</p>
+                </div>
+              </div>
+              <div class="in_intro" id="in_intro1" onclick="blockit(12)" style="display:none; text-align: center;">
+                <div style="height:35px;"><img src="assets/images/inlogo.png" style="width:35px; padding-top:2px; "></div>
+                <div class="intro" style="height:165px;">
+                  Lorem ipsum idor
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+        </div> 
+        
+        
+
         <div class="foot" style="align-items: baseline; padding:0px; background-color:black; color:white;  width:100%; text-align: center; ">
           <p class="font_san" style="padding:0px; margin-bottom:0px;">Follege Inc. &copy; 2020</p>
         </div>
@@ -221,7 +518,7 @@ for (var i = 0; i < loader4[i].length; i++) {
         <span>Send</span>
       </button>
     </form>
-    <p class="font-mont" id="App" style="color:white; background-color:black; padding:5px 10px 5px 10px; font-size:120%; font-weight:bolder; border-radius: 5px;text-align:center; position:fixed; right:20px;"><a href="apply" style="text-decoration: none; color:white;">Apply</a></p>
+    <p class="font-mont" id="App" style="color:white; background-color:black; padding:5px 10px 5px 10px; font-size:120%; font-weight:bolder; border-radius: 5px;text-align:center; position:fixed; right:20px;"><a href="Apply" style="text-decoration: none; color:white;">Apply</a></p>
     <p class="font-mont" style="color:white; background-color:black; padding:5px 10px 5px 10px; font-size:40px; font-weight:bolder; border-radius: 5px;text-align:center; position:fixed; bottom:20px; right:20px;"><a href="#main" style="text-decoration: none; color:white;">&#8593;</a></p>
     <a href="https://instagram.com/follege.app" style="text-align: center; align-items: baseline;"><img src="assets/images/38-instagram-3-512.png" style="width:50px; position: fixed; bottom:120px; right:20px; background-color:white; padding-left:0.6px; padding-bottom:1.2px;border-top-left-radius:  25px; border-top-right-radius: 25px; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; "/></a>
 
@@ -229,10 +526,32 @@ for (var i = 0; i < loader4[i].length; i++) {
       <a href="index"><p >HOME</p></a>
   </div>
   <div class="design" id ="Apply" style="width:80px; border-color:white; position:fixed; ">
-    <a href="apply"><p >Apply</p></a>,
+    <a href="Apply"><p >Apply</p></a>,
 </div>
 
 <script>
+
+// .col- (extra small devices - screen width less than 576px)
+// .col-sm- (small devices - screen width equal to or greater than 576px)
+// .col-md- (medium devices - screen width equal to or greater than 768px)
+// .col-lg- (large devices - screen width equal to or greater than 992px)
+// .col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+
+
+function seeit(i)
+{
+  var back = document.getElementsByClassName("in_intro");
+  var front = document.getElementsByClassName("photo_name");
+  back[i].style.display = 'block'; front[i].style.display = 'none';
+}
+
+function blockit(i)
+{
+  var back = document.getElementsByClassName("in_intro");
+  var front = document.getElementsByClassName("photo_name");
+  back[i].style.display = 'none'; front[i].style.display = 'block';
+}
+
   var top_heading =  document.getElementById("top_heading");
   var first = document.getElementById('main');
 var second = document.getElementById('main_sub');
@@ -287,7 +606,11 @@ var animation = bodymovin.loadAnimation({
   autoplay: 'true',
   name:'clutter',
 })
-  
+var i;
+for(i = 0;i<front.length();i++)
+{
+  front[i].onclick(function(){ front[i].style.display = "none"; back[i].style.display = "block";});
+}  
 </script>
 
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
