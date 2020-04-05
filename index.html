@@ -106,15 +106,16 @@
       </button>
       <div class="collapse navbar-collapse" style="text-align:center;"  id="navbarNavAltMarkup">
         <div class="navbar-nav" style="align-items:baseline; text-align: center;">
-          <a class="nav-item nav-link font-mont " onclick="my()" href="#contact1" style="text-align: center;"> Contact</a>
-          <a class="nav-item nav-link font-mont " href="Apply" onclick="my()" style="text-align: center;"> Internship</a>
-          <a class="nav-item nav-link font-mont" href="#team" onclick="my()" style="text-align: center;"> Team</a>
-          <a class="nav-item nav-link font-mont" href="#Community" onclick="my()" style="text-align: center; "> Community</a>
-          <a class="nav-item nav-link" style="text-align: center;">
-            <input  type="checkbox" id = "form-acc" />
+          <a class="nav-item nav-link font-mont anavs" id= "anavs1" onclick="my()" href="#contact1" style="text-align: center;"> <span class="nav_tokens">Contact</span></a>
+          <a class="nav-item nav-link font-mont anavs"id= "anavs2" href="Apply" onclick="my()" style="text-align: center;"> <span class="nav_tokens">Internship</span></a>
+          <a class="nav-item nav-link font-mont anavs"id= "anavs3" href="#team" onclick="my()" style="text-align: center;"><span class="nav_tokens"> Team</span></a>
+          <a class="nav-item nav-link font-mont anavs" id= "anavs4"href="#Community" onclick="my()" style="text-align: center; "> <span class="nav_tokens">Community</span></a>
+          <a class="nav-item nav-link anavs"id= "anavs5" style="text-align: center;">
+           <span class="nav_tokens"> <input  type="checkbox" id = "form-acc" />
             <label for="form-acc" class="font-mont" style="color:#06de99; box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19); letter-spacing: 0px; font-weight: bolder;  border-color: #06de99; border-width:3px;/* box-shadow: 0 0 1px rgba(255, 255, 255, 0.774), 0 0 2px rgba(255, 255, 255, 0.76), 0 0 5px #06de9ace, 0 0 10px #06de9ace, 0 0 10px #06de9ace, 0 0 20px #06de9ace, 0 0 30px #06de9ace;*/ background-color:black; padding-top:5px; padding-bottom:5px; padding-right:10px; padding-left:10px; border-radius: 10px;">
               <h5>R<span style="text-transform: lowercase;">equest</span> I<span style="text-transform: lowercase;">nvite</span></h5>
             </label>
+            </span>
             </a>
         </div>
       </div>
@@ -764,12 +765,30 @@ var isIpad  =/iPad/i.test(navigator.userAgent);
      {
        h3s[i].classList.add("phone");
      }
-    
+
+     var navs = document.getElementsByClassName("nav_tokens");
+     var i = 0;
+     for(i=0;i<navs.length;i++)
+     {
+       navs[i].classList.add("shift_right");
+     }
+     var shifts = document.getElementsByClassName("shift_right");
+     var j = 0;
+     for(j = 0;j<shifts.length;j++)
+     {
+       shifts[j].style.width = screen.width + "px";
+     }
     }
     else if(isIpad)
     { top_heading.style.marginTop = "80%"; }
     else{ 
-     
+      var navs = document.getElementsByClassName("nav_tokens");
+     var i = 0;
+     for(i=0;i<navs.length;i++)
+     {
+       navs[i].classList.remove("shift_right");
+     }
+    
       var h3s = document.getElementsByTagName("h3");
      var i = 0;
      for(i = 0;i<h3s.length;i++)
