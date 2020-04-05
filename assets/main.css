@@ -23,7 +23,7 @@ body {
 }
 #main
 {
-  background-color:black;
+  background-color:#101426f3;
   border-bottom-left-radius:30px;
   border-bottom-right-radius:30px;
 }
@@ -253,6 +253,7 @@ input[type="checkbox"] {
 
   ::-webkit-scrollbar{
     display:none;
+    width:0px;
 
   }
   body
@@ -281,4 +282,20 @@ input[type="checkbox"] {
 .top_text
 {
   align-items: baseline;
+}
+h2,h3
+{
+  font-size:110%;
+}
+.phone
+{
+  font-size:130%;
+}
+.shift_right
+{
+  margin-left:5%;
+}
+.shift_right_just
+{
+  margin-left:3%;
 }
